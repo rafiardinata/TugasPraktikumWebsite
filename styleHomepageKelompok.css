@@ -1,115 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 70vw;
-    color: #000000;
-    text-align: center;
-    padding: 3em;
-    text-decoration: none;
-    font-size: 35px;
+  top: 0;
+  width: 70vw;
+  color: #000000;
+  text-align: center;
+  padding: 3em;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.ourCV {
+  display: flex;
+  width: 100%;
+  height: 500px;
 }
 
 .card {
-    position: relative;
-    width: 280px;
-    height: 384px;
-    margin-left: 32px;
-    margin-bottom: -250px;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.05), 2px 4px 32px 0 rgba(0, 0, 0, 0.1), 0 0 64px 0 rgba(0, 0, 0, 0.2);
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: transform 300ms ease;
+  position: relative;
+  width: 280px;
+  height: 384px;
+  margin-left: 32px;
+  margin-bottom: -250px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.05),
+    2px 4px 32px 0 rgba(0, 0, 0, 0.1), 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: transform 300ms ease;
 }
 
 .card .image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 70px;
-    left: 0;
-    background-position: center;
-    background-size: cover;
-    transition: bottom 300ms ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 70px;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  transition: bottom 300ms ease;
 }
 
-.image:hover{
- background-image: url(https://source.unsplash.com/random/136x383)
+.image:hover {
+  background-image: url(https://source.unsplash.com/random/136x383);
 }
 
 .card .content {
-    position: absolute;
-    z-index: 10;
-    padding: 0.5rem;
-    height: 100%;
-    background: white;
-    transform: translateY(314px);
-    transition: transform 300ms ease;
+  position: absolute;
+  z-index: 10;
+  padding: 0.5rem;
+  height: 100%;
+  background: white;
+  transform: translateY(314px);
+  transition: transform 300ms ease;
 }
 
 .card .content .header {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .card .content .meta {
-    font-size: 0.8rem;
-    color: #888;
-    margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
 }
 
 .card .content .description {
-    opacity: 0;
-    transition: opacity 500ms ease 100ms;
+  opacity: 0;
+  transition: opacity 500ms ease 100ms;
 }
 
 .card:hover {
-    transform: translateY(-16px);
+  transform: translateY(-16px);
 }
 
 .card:hover .image {
-    bottom: 280px;
+  bottom: 280px;
 }
 
 .card:hover .content {
-    transform: translateY(104px);
+  transform: translateY(104px);
 }
 
 .card:hover .content .description {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* footer */
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    color: #000000;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  .footer a {
-    color: #000000;
-    font-weight: 600;
-    text-decoration: none;
-  }
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  color: #000000;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer a {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+}
