@@ -1,0 +1,319 @@
+/* import font google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 250px;
+}
+
+/* untuk header */
+header {
+  z-index: 999;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: #fffb00;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigasi {
+  position: relative;
+}
+
+header .navigasi a {
+  color: #fffb00;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+header .navigasi a:hover {
+  color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* h4 secara umum */
+h4 {
+  color: rgb(0, 0, 0);
+}
+
+/* home */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+
+/* konten kiri */
+.home .content1 {
+  width: 500px;
+}
+
+.home .content1 h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.home .content1 h2 span {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.animasi-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+
+.animasi-text h3 {
+  color: #fffb00;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animasi-text h3:nth-child(1) {
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+  0% {
+    margin-top: 0;
+  }
+
+  25% {
+    margin-top: -70px;
+  }
+
+  50% {
+    margin-top: -140px;
+  }
+
+  75% {
+    margin-top: -70px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.btns {
+  background-color: #fffb00;
+  color: #000000;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btns:hover {
+  background: white;
+  color: #ff0000;
+}
+
+/* foto di halaman home */
+.img-eclip {
+  border-radius: 50%;
+  width: 65vh;
+  position: relative;
+  display: flex;
+} 
+
+table {
+  width: 100%;
+  align-items: center;
+}
+
+/* about */
+.about {
+  min-height: 100vh;
+}
+
+.about .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about .content .col-left {
+  position: relative;
+  width: 30%;
+}
+
+.about .content .col-right {
+  position: relative;
+  width: 65%;
+}
+
+.about .content .col-left .img-card {
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+}
+
+.about .content .col-left .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-card:before, .img-card:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #000000, #00aeff, #ff00aa,#ffff00, #ff0000, #fb0094, 
+		#00ff9d, #ff0000,#fffb00, #7700ff);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.img-card:after {
+	filter: blur(15px);
+}
+
+table {
+  width: 100%;
+  align-items: center;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title-tentang-saya {
+  position: relative;
+  color: #000000;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.section-title-kontak {
+  position: relative;
+  color: #fffb00;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+/* kontak */
+.kontak {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.kontak .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.kontak .content .card {
+  width: 100px;
+  margin: 15px;
+}
+
+.kontak .content .img-card {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.kontak .content .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.kontak .content .img-card img:hover {
+  transform: scale(1.2);
+}
+
+/* footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer a {
+  color: #fffb00;
+  font-weight: 600;
+  text-decoration: none;
+}
